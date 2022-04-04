@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
   return (
-    <div className={`list-item ${state}`}>
+    <div style={{ background: 'red' }}
+  
+  className={`list-item ${state}`} >
       <label className="checkbox">
         <input
           type="checkbox"
